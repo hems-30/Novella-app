@@ -35,9 +35,7 @@ class BookCard extends StatelessWidget {
         ),
         child: Row(
           children: [
-            // ======================
-            // BOOK IMAGE (CLEAN FIX)
-            // ======================
+            
             ClipRRect(
               borderRadius: BorderRadius.circular(12),
               child: Image.network(
@@ -46,7 +44,6 @@ class BookCard extends StatelessWidget {
                 height: 100,
                 fit: BoxFit.cover,
 
-                // IMAGE LOADING STATE
                 loadingBuilder: (context, child, loadingProgress) {
                   if (loadingProgress == null) return child;
 
@@ -63,7 +60,6 @@ class BookCard extends StatelessWidget {
                   );
                 },
 
-                // IMAGE ERROR STATE
                 errorBuilder: (context, error, stackTrace) {
                   return Container(
                     width: 70,
@@ -80,9 +76,7 @@ class BookCard extends StatelessWidget {
 
             const SizedBox(width: 12),
 
-            // ======================
-            // BOOK INFO
-            // ======================
+            // Book details
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
