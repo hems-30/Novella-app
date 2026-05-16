@@ -35,7 +35,9 @@ class BookCard extends StatelessWidget {
         ),
         child: Row(
           children: [
-            // Book Cover
+            // ======================
+            // BOOK IMAGE (CLEAN FIX)
+            // ======================
             ClipRRect(
               borderRadius: BorderRadius.circular(12),
               child: Image.network(
@@ -43,12 +45,34 @@ class BookCard extends StatelessWidget {
                 width: 70,
                 height: 100,
                 fit: BoxFit.cover,
+
+                // IMAGE LOADING STATE
+                loadingBuilder: (context, child, loadingProgress) {
+                  if (loadingProgress == null) return child;
+
+                  return Container(
+                    width: 70,
+                    height: 100,
+                    color: Colors.grey[200],
+                    alignment: Alignment.center,
+                    child: const SizedBox(
+                      width: 18,
+                      height: 18,
+                      child: CircularProgressIndicator(strokeWidth: 2),
+                    ),
+                  );
+                },
+
+                // IMAGE ERROR STATE
                 errorBuilder: (context, error, stackTrace) {
                   return Container(
                     width: 70,
                     height: 100,
                     color: Colors.grey[300],
-                    child: const Icon(Icons.book, color: Colors.white),
+                    child: const Icon(
+                      Icons.broken_image,
+                      color: Colors.grey,
+                    ),
                   );
                 },
               ),
@@ -56,7 +80,9 @@ class BookCard extends StatelessWidget {
 
             const SizedBox(width: 12),
 
-            // Book Info
+            // ======================
+            // BOOK INFO
+            // ======================
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -84,7 +110,6 @@ class BookCard extends StatelessWidget {
 
                   const SizedBox(height: 10),
 
-                  
                   Container(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 10,
