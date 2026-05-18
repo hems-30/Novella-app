@@ -44,23 +44,28 @@ Data is fetched from public APIs and may vary over time.
 
 Below are screenshots of the running application:
 
+## 📸 Screenshots
+
 ### Splash Screen
-![Splash Screen](assets/splash.png)
+<img src="assets/splash.png" width="250"/>
 
 ### Home Page
-![Home Page](assets/home.png)
+<img src="assets/home.png" width="250"/>
 
 ### Book Details Page
-![Book Deatils](assets/detail.png)
+<img src="assets/detail.png" width="250"/>
 
-### Add Review page
-![Add Review](assets/addreview.png)
+### Add Review Page
+<img src="assets/addreview.png" width="250"/>
 
-### Edit Review page
-![Edit Review](assets/editreview.png)
+### Edit Review Page
+<img src="assets/editreview.png" width="250"/>
 
 ### My Reviews Page
-![My Review](assets/myreviews.png)
+<img src="assets/myreviews.png" width="250"/>
 
-## Author
+---
+
+## 👨‍💻 Author
+
 Hemen Solomon
