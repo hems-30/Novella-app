@@ -44,8 +44,6 @@ Data is fetched from public APIs and may vary over time.
 
 Below are screenshots of the running application:
 
-## 📸 Screenshots
-
 ### Splash Screen
 <img src="assets/splash.png" width="250"/>
 
