@@ -66,6 +66,6 @@ Below are screenshots of the running application:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Hemen Solomon
